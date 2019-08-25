@@ -163,11 +163,17 @@
     <ClInclude Include="..\inc\sram.h" />
     <ClInclude Include="..\inc\string.h" />
     <ClInclude Include="..\inc\sys.h" />
+    <ClInclude Include="..\inc\timer.h" />
     <ClInclude Include="..\inc\types.h" />
     <ClInclude Include="..\inc\vdp_dma.h" />
     <ClInclude Include="..\inc\vdp_pal.h" />
     <ClInclude Include="..\inc\vdp_spr.h" />
     <ClInclude Include="..\inc\vram.h" />
+    <ClInclude Include="..\inc\xgm.h" />
+    <ClInclude Include="..\inc\ym2612.h" />
+    <ClInclude Include="..\inc\z80_ctrl.h" />
+    <ClInclude Include="..\inc\z80_mvsc.h" />
+    <ClInclude Include="..\inc\z80_vgm.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
