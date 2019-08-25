@@ -153,6 +153,10 @@
     <ClInclude Include="..\inc\memory.h" />
     <ClInclude Include="..\inc\sys.h" />
     <ClInclude Include="..\inc\types.h" />
+    <ClInclude Include="..\inc\vdp_dma.h" />
+    <ClInclude Include="..\inc\vdp_pal.h" />
+    <ClInclude Include="..\inc\vdp_spr.h" />
+    <ClInclude Include="..\inc\vram.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
