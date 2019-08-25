@@ -148,6 +148,8 @@
     <ClInclude Include="..\inc\asm.h" />
     <ClInclude Include="..\inc\config.h" />
     <ClInclude Include="..\inc\genesis.h" />
+    <ClInclude Include="..\inc\maths.h" />
+    <ClInclude Include="..\inc\maths3D.h" />
     <ClInclude Include="..\inc\memory.h" />
     <ClInclude Include="..\inc\sys.h" />
     <ClInclude Include="..\inc\types.h" />

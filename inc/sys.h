@@ -10,7 +10,6 @@
 #ifndef _SYS_H_
 #define _SYS_H_
 
-#include "types.h"
 
 #define PROCESS_PALETTE_FADING      (1 << 0)
 #define PROCESS_BITMAP_TASK         (1 << 1)

@@ -10,6 +10,10 @@
 #include "memory.h"
 //#include "tools.h"
 
+
+#include "maths.h"
+#include "maths3D.h"
+
 #define SGDK_VERSION    1.34
 
 
