@@ -10,6 +10,10 @@
 #include "memory.h"
 //#include "tools.h"
 
+//#include "font.h"
+#include "string.h"
+
+//#include "tab_cnv.h"
 
 #include "maths.h"
 #include "maths3D.h"
@@ -20,6 +24,20 @@
 #include "vdp_pal.h"
 #include "vdp_spr.h"
 //#include "vdp_tile.h"
+
+#include "vram.h"
+#include "dma.h"
+
+
+#include "sound.h"
+#include "psg.h"
+#include "joy.h"
+//#include "timer.h"
+
+
+//#include "sram.h"
+//#include "fat16.h"
+
 
 #define SGDK_VERSION    1.34
 

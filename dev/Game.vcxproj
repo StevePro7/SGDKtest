@@ -147,10 +147,21 @@
   <ItemGroup>
     <ClInclude Include="..\inc\asm.h" />
     <ClInclude Include="..\inc\config.h" />
+    <ClInclude Include="..\inc\dma.h" />
+    <ClInclude Include="..\inc\fat16.h" />
     <ClInclude Include="..\inc\genesis.h" />
+    <ClInclude Include="..\inc\genres.h" />
+    <ClInclude Include="..\inc\joy.h" />
+    <ClInclude Include="..\inc\kdebug.h" />
     <ClInclude Include="..\inc\maths.h" />
     <ClInclude Include="..\inc\maths3D.h" />
     <ClInclude Include="..\inc\memory.h" />
+    <ClInclude Include="..\inc\psg.h" />
+    <ClInclude Include="..\inc\smp_null.h" />
+    <ClInclude Include="..\inc\smp_null_pcm.h" />
+    <ClInclude Include="..\inc\sound.h" />
+    <ClInclude Include="..\inc\sram.h" />
+    <ClInclude Include="..\inc\string.h" />
     <ClInclude Include="..\inc\sys.h" />
     <ClInclude Include="..\inc\types.h" />
     <ClInclude Include="..\inc\vdp_dma.h" />
