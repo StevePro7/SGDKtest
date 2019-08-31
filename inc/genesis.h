@@ -1,6 +1,7 @@
 #ifndef _GENESIS_H_
 #define _GENESIS_H_
 
+
 #include "config.h"
 #include "asm.h"
 #include "types.h"
@@ -29,6 +30,8 @@
 #include "dma.h"
 
 #include "bmp.h"
+#include "tile_cache.h"
+#include "sprite_eng.h"
 
 #include "sound.h"
 #include "xgm.h"
@@ -43,4 +46,4 @@
 #define SGDK_VERSION    1.34
 
 
-#endif//_GENESIS_H_
+#endif // _GENESIS_H_
