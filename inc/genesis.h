@@ -10,7 +10,7 @@
 #include "memory.h"
 #include "tools.h"
 
-//#include "font.h"
+#include "font.h"
 #include "string.h"
 
 #include "tab_cnv.h"
@@ -32,16 +32,12 @@
 
 #include "sound.h"
 #include "xgm.h"
-//#include "tfcplay.h"
-//#include "z80_ctrl.h"
+#include "tfcplay.h"
+#include "z80_ctrl.h"
 #include "ym2612.h"
 #include "psg.h"
 #include "joy.h"
 #include "timer.h"
-
-
-//#include "sram.h"
-//#include "fat16.h"
 
 
 #define SGDK_VERSION    1.34
