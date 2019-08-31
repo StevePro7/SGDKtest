@@ -146,6 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\inc\asm.h" />
+    <ClInclude Include="..\inc\bmp.h" />
     <ClInclude Include="..\inc\config.h" />
     <ClInclude Include="..\inc\dma.h" />
     <ClInclude Include="..\inc\fat16.h" />
@@ -163,11 +164,16 @@
     <ClInclude Include="..\inc\sram.h" />
     <ClInclude Include="..\inc\string.h" />
     <ClInclude Include="..\inc\sys.h" />
+    <ClInclude Include="..\inc\tab_cnv.h" />
     <ClInclude Include="..\inc\timer.h" />
+    <ClInclude Include="..\inc\tools.h" />
     <ClInclude Include="..\inc\types.h" />
+    <ClInclude Include="..\inc\vdp.h" />
+    <ClInclude Include="..\inc\vdp_bg.h" />
     <ClInclude Include="..\inc\vdp_dma.h" />
     <ClInclude Include="..\inc\vdp_pal.h" />
     <ClInclude Include="..\inc\vdp_spr.h" />
+    <ClInclude Include="..\inc\vdp_tile.h" />
     <ClInclude Include="..\inc\vram.h" />
     <ClInclude Include="..\inc\xgm.h" />
     <ClInclude Include="..\inc\ym2612.h" />

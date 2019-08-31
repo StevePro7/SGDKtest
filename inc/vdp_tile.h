@@ -163,7 +163,7 @@ typedef struct
  *  ~90 bytes per scanline in software (during blanking)<br>
  *  ~190 bytes per scanline in hardware (during blanking)
  */
-void VDP_loadTileData(const u32 *data, u16 index, u16 num, TransferMethod tm);
+void VDP_loadTileData( const u32 *data, u16 index, u16 num, TransferMethod tm ) {}
 /**
  *  \brief
  *      Load tile data (pattern) in VRAM.
@@ -186,7 +186,7 @@ void VDP_loadTileData(const u32 *data, u16 index, u16 num, TransferMethod tm);
  *  ~90 bytes per scanline in software (during blanking)<br>
  *  ~190 bytes per scanline in hardware (during blanking)
  */
-u16 VDP_loadTileSet(const TileSet *tileset, u16 index, TransferMethod tm);
+u16 VDP_loadTileSet(const TileSet *tileset, u16 index, TransferMethod tm) { return 0; }
 /**
  *  \brief
  *      Load font tile data in VRAM.<br>
@@ -208,7 +208,7 @@ u16 VDP_loadTileSet(const TileSet *tileset, u16 index, TransferMethod tm);
  *  Each character should fit in one tile (8x8 pixels bloc).<br>
  *  See also VDP_loadFont(..) and VDP_loadTileData(..)
  */
-void VDP_loadFontData(const u32 *font, u16 length, TransferMethod tm);
+void VDP_loadFontData( const u32 *font, u16 length, TransferMethod tm ) {}
 /**
  *  \brief
  *      Load font from the specified TileSet structure.
@@ -230,7 +230,7 @@ void VDP_loadFontData(const u32 *font, u16 length, TransferMethod tm);
  *  Each character should fit in one tile (8x8 pixels bloc).<br>
  *  See also VDP_loadFontData(..)
  */
-u16 VDP_loadFont(const TileSet *font, TransferMethod tm);
+u16 VDP_loadFont(const TileSet *font, TransferMethod tm) { return 0; }
 
 /**
  *  \brief
@@ -252,7 +252,7 @@ u16 VDP_loadFont(const TileSet *font, TransferMethod tm);
  *  For "in-game" condition you should use VDP_loadTileData() method with converted tile data.<br>
  *  See also VDP_loadBMPTileDataEx().
  */
-void VDP_loadBMPTileData(const u32 *data, u16 index, u16 w, u16 h, u16 bmp_w);
+void VDP_loadBMPTileData( const u32 *data, u16 index, u16 w, u16 h, u16 bmp_w ) {}
 /**
  *  \brief
  *      Load 4bpp bitmap tile data in VRAM.
@@ -277,7 +277,7 @@ void VDP_loadBMPTileData(const u32 *data, u16 index, u16 w, u16 h, u16 bmp_w);
  *  For "in-game" condition you should use VDP_loadTileData() method with converted tile data.
  *  See also VDP_loadBMPTileData()
  */
-void VDP_loadBMPTileDataEx(const u32 *data, u16 index, u16 x, u16 y, u16 w, u16 h, u16 bmp_w);
+void VDP_loadBMPTileDataEx( const u32 *data, u16 index, u16 x, u16 y, u16 w, u16 h, u16 bmp_w ) {}
 
 /**
  *  \brief
@@ -295,7 +295,7 @@ void VDP_loadBMPTileDataEx(const u32 *data, u16 index, u16 x, u16 y, u16 w, u16 
  *
  *  This function is generally used to clear tile data in VRAM.
  */
-void VDP_fillTileData(u8 value, u16 index, u16 num, u16 wait);
+void VDP_fillTileData( u8 value, u16 index, u16 num, u16 wait ) {}
 
 /**
  *  \brief
@@ -312,7 +312,7 @@ void VDP_fillTileData(u8 value, u16 index, u16 num, u16 wait);
  *  \param ind
  *      position in tilemap.
  */
-void VDP_setTileMap(u16 plan, u16 tile, u16 ind);
+void VDP_setTileMap( u16 plan, u16 tile, u16 ind ) {}
 /**
  *  \brief
  *      Set tilemap data at single position.
@@ -330,12 +330,12 @@ void VDP_setTileMap(u16 plan, u16 tile, u16 ind);
  *  \param y
  *      y position (in tile).
  */
-void VDP_setTileMapXY(VDPPlan plan, u16 tile, u16 x, u16 y);
+void VDP_setTileMapXY( VDPPlan plan, u16 tile, u16 x, u16 y ) {}
 /**
  *  \deprecated
  *      Use VDP_fillTileMap() instead
  */
-void VDP_fillTileMapRectByIndex(u16 plan, u16 tile, u16 ind, u16 num);
+void VDP_fillTileMapRectByIndex( u16 plan, u16 tile, u16 ind, u16 num ) {}
 /**
  *  \brief
  *      Fill tilemap data.
@@ -356,7 +356,7 @@ void VDP_fillTileMapRectByIndex(u16 plan, u16 tile, u16 ind, u16 num);
  *  \see VDP_fillTileMapRect()
  *  \see VDP_fillTileMapRectInc()
  */
-void VDP_fillTileMap(u16 plan, u16 tile, u16 ind, u16 num);
+void VDP_fillTileMap( u16 plan, u16 tile, u16 ind, u16 num ) {}
 /**
  *  \brief
  *      Fill tilemap data at specified region.
@@ -383,12 +383,12 @@ void VDP_fillTileMap(u16 plan, u16 tile, u16 ind, u16 num);
  *  \see VDP_fillTileMap() (faster method)
  *  \see VDP_fillTileMapRectInc()
  */
-void VDP_fillTileMapRect(VDPPlan plan, u16 tile, u16 x, u16 y, u16 w, u16 h);
+void VDP_fillTileMapRect( VDPPlan plan, u16 tile, u16 x, u16 y, u16 w, u16 h ) {}
 /**
  *  \deprecated
  *      Use VDP_clearTileMap() instead
  */
-void VDP_clearTileMapRectByIndex(u16 plan, u16 ind, u16 num, u16 wait);
+void VDP_clearTileMapRectByIndex( u16 plan, u16 ind, u16 num, u16 wait ) {}
 /**
  *  \brief
  *      Clear tilemap data.
@@ -411,7 +411,7 @@ void VDP_clearTileMapRectByIndex(u16 plan, u16 ind, u16 num, u16 wait);
  *  \see VDP_fillTileMap()
  *  \see VDP_fillTileMapRectInc()
  */
-void VDP_clearTileMap(u16 plan, u16 ind, u16 num, u16 wait);
+void VDP_clearTileMap( u16 plan, u16 ind, u16 num, u16 wait ) {}
 /**
  *  \brief
  *      Clear tilemap data at specified region.
@@ -433,12 +433,12 @@ void VDP_clearTileMap(u16 plan, u16 ind, u16 num, u16 wait);
  *
  *  \see VDP_clearTileMap() (faster method)
  */
-void VDP_clearTileMapRect(VDPPlan plan, u16 x, u16 y, u16 w, u16 h);
+void VDP_clearTileMapRect( VDPPlan plan, u16 x, u16 y, u16 w, u16 h ) {}
 /**
  *  \deprecated
  *      Use VDP_fillTileMapInc() instead.
  */
-void VDP_fillTileMapRectIncByIndex(u16 plan, u16 basetile, u16 ind, u16 num);
+void VDP_fillTileMapRectIncByIndex( u16 plan, u16 basetile, u16 ind, u16 num ) {}
 /**
  *  \brief
  *      Fill tilemap data with index auto increment.
@@ -465,7 +465,7 @@ void VDP_fillTileMapRectIncByIndex(u16 plan, u16 basetile, u16 ind, u16 num);
  *  \see also VDP_fillTileMap()
  *  \see also VDP_fillTileMapRectInc()
  */
-void VDP_fillTileMapInc(u16 plan, u16 basetile, u16 ind, u16 num);
+void VDP_fillTileMapInc( u16 plan, u16 basetile, u16 ind, u16 num ) {}
 /**
  *  \brief
  *      Fill tilemap data with index auto increment at specified region.
@@ -497,12 +497,12 @@ void VDP_fillTileMapInc(u16 plan, u16 basetile, u16 ind, u16 num);
  *  \see also VDP_fillTileMapInc() (faster method)
  *  \see also VDP_fillTileMapRect()
  */
-void VDP_fillTileMapRectInc(VDPPlan plan, u16 basetile, u16 x, u16 y, u16 w, u16 h);
+void VDP_fillTileMapRectInc( VDPPlan plan, u16 basetile, u16 x, u16 y, u16 w, u16 h ) {}
 /**
  *  \deprecated
  *      Use VDP_setTileMapData() instead.
  */
-void VDP_setTileMapRectByIndex(u16 plan, const u16 *data, u16 ind, u16 num, TransferMethod tm);
+void VDP_setTileMapRectByIndex( u16 plan, const u16 *data, u16 ind, u16 num, TransferMethod tm ) {}
 /**
  *  \brief
  *      Load tilemap data at specified index.
@@ -534,7 +534,7 @@ void VDP_setTileMapRectByIndex(u16 plan, const u16 *data, u16 ind, u16 num, Tran
  *  \see VDP_setTileMapDataEx().
  *  \see VDP_setTileMapDataRect().
  */
-void VDP_setTileMapData(u16 plan, const u16 *data, u16 ind, u16 num, TransferMethod tm);
+void VDP_setTileMapData( u16 plan, const u16 *data, u16 ind, u16 num, TransferMethod tm ) {}
 /**
  *  \brief
  *      Load tilemap data at specified region.
@@ -561,12 +561,12 @@ void VDP_setTileMapData(u16 plan, const u16 *data, u16 ind, u16 num, TransferMet
  *  \see VDP_setTileMapDataRectEx().
  *  \see VDP_setTileMapData().
  */
-void VDP_setTileMapDataRect(VDPPlan plan, const u16 *data, u16 x, u16 y, u16 w, u16 h);
+void VDP_setTileMapDataRect( VDPPlan plan, const u16 *data, u16 x, u16 y, u16 w, u16 h ) {}
 /**
  *  \deprecated
  *      Use VDP_setTileMapDataEx() instead.
  */
-void VDP_setTileMapRectExByIndex(u16 plan, const u16 *data, u16 baseindex, u16 baseflags, u16 ind, u16 num);
+void VDP_setTileMapRectExByIndex( u16 plan, const u16 *data, u16 baseindex, u16 baseflags, u16 ind, u16 num ) {}
 /**
  *  \brief
  *      Load tilemap data at specified index (extended version).
@@ -591,12 +591,12 @@ void VDP_setTileMapRectExByIndex(u16 plan, const u16 *data, u16 baseindex, u16 b
  *  \see VDP_setTileMapData()
  *  \see VDP_setTileMapDataRectEx()
  */
-void VDP_setTileMapDataEx(u16 plan, const u16 *data, u16 basetile, u16 ind, u16 num);
+void VDP_setTileMapDataEx( u16 plan, const u16 *data, u16 basetile, u16 ind, u16 num ) {}
 /**
  *  \deprecated
  *      Use VDP_setTileMapDataRectEx() instead.
  */
-void VDP_setTileMapRectEx(VDPPlan plan, const u16 *data, u16 baseindex, u16 baseflags, u16 x, u16 y, u16 w, u16 h);
+void VDP_setTileMapRectEx( VDPPlan plan, const u16 *data, u16 baseindex, u16 baseflags, u16 x, u16 y, u16 w, u16 h ) {}
 /**
  *  \brief
  *      Load tilemap data at specified region (extended version).
@@ -627,7 +627,7 @@ void VDP_setTileMapRectEx(VDPPlan plan, const u16 *data, u16 baseindex, u16 base
  *  \see VDP_setTileMapDataRect()
  *  \see VDP_setTileMapDataEx()
  */
-void VDP_setTileMapDataRectEx(VDPPlan plan, const u16 *data, u16 basetile, u16 x, u16 y, u16 w, u16 h, u16 wm);
+void VDP_setTileMapDataRectEx( VDPPlan plan, const u16 *data, u16 basetile, u16 x, u16 y, u16 w, u16 h, u16 wm ) {}
 
 /**
  *  \brief
@@ -653,7 +653,7 @@ void VDP_setTileMapDataRectEx(VDPPlan plan, const u16 *data, u16 basetile, u16 x
  *  \see VDP_setTileMapData()
  *  \see VDP_setTileMapDataEx()
  */
-u16 VDP_setMap(VDPPlan plan, const Map *map, u16 basetile, u16 x, u16 y);
+u16 VDP_setMap(VDPPlan plan, const Map *map, u16 basetile, u16 x, u16 y) { return 0; }
 /**
  *  \brief
  *      Load Map region at specified position.
@@ -686,7 +686,7 @@ u16 VDP_setMap(VDPPlan plan, const Map *map, u16 basetile, u16 x, u16 y);
  *  \see VDP_setTileMapDataRect()
  *  \see VDP_setTileMapDataRectEx()
  */
-u16 VDP_setMapEx(VDPPlan plan, const Map *map, u16 basetile, u16 x, u16 y, u16 xm, u16 ym, u16 wm, u16 hm);
+u16 VDP_setMapEx(VDPPlan plan, const Map *map, u16 basetile, u16 x, u16 y, u16 xm, u16 ym, u16 wm, u16 hm) { return 0; }
 
 
 #endif // _VDP_TILE_H_

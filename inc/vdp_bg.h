@@ -97,7 +97,7 @@ void VDP_setHorizontalScroll(VDPPlan plan, s16 value);
  *
  *  \see VDP_setScrollingMode() function to change scroll mode.
  */
-void VDP_setHorizontalScrollTile(VDPPlan plan, u16 tile, s16* values, u16 len, TransferMethod tm);
+void VDP_setHorizontalScrollTile(VDPPlan plan, u16 tile, s16* values, u16 len, TransferMethod tm) {}
 /**
  *  \brief
  *      Set plan horizontal scroll (line scroll mode).<br>
@@ -127,7 +127,7 @@ void VDP_setHorizontalScrollTile(VDPPlan plan, u16 tile, s16* values, u16 len, T
  *
  *  \see VDP_setScrollingMode()
  */
-void VDP_setHorizontalScrollLine(VDPPlan plan, u16 line, s16* values, u16 len, TransferMethod tm);
+void VDP_setHorizontalScrollLine(VDPPlan plan, u16 line, s16* values, u16 len, TransferMethod tm) {}
 
 /**
  *  \brief
@@ -147,7 +147,7 @@ void VDP_setHorizontalScrollLine(VDPPlan plan, u16 line, s16* values, u16 len, T
  *
  *  \see VDP_setScrollingMode()
  */
-void VDP_setVerticalScroll(VDPPlan plan, s16 value);
+void VDP_setVerticalScroll(VDPPlan plan, s16 value) {}
 /**
  *  \brief
  *      Set plan vertical scroll (2-Tiles scroll mode).
@@ -176,7 +176,7 @@ void VDP_setVerticalScroll(VDPPlan plan, s16 value);
  *
  *  \see VDP_setScrollingMode()
  */
-void VDP_setVerticalScrollTile(VDPPlan plan, u16 tile, s16* values, u16 len, TransferMethod tm);
+void VDP_setVerticalScrollTile(VDPPlan plan, u16 tile, s16* values, u16 len, TransferMethod tm) {}
 
 /**
  *  \brief
@@ -192,7 +192,7 @@ void VDP_setVerticalScrollTile(VDPPlan plan, u16 tile, s16* values, u16 len, Tra
  *      Wait the operation to complete when set to TRUE otherwise it returns immediately
  *      but then you will require to wait for DMA completion (#DMA_waitCompletion()) before accessing the VDP.
  */
-void VDP_clearPlan(VDPPlan plan, u16 wait);
+void VDP_clearPlan(VDPPlan plan, u16 wait) {}
 
 /**
  *  \brief
@@ -203,7 +203,12 @@ void VDP_clearPlan(VDPPlan plan, u16 wait);
  *  \see VDP_drawText(..)
  *  \see VDP_clearText(..)
  */
-VDPPlan VDP_getTextPlan();
+VDPPlan VDP_getTextPlan()
+{
+	VDPPlan vdpPlan;
+	vdpPlan.value = 0;
+	return vdpPlan;
+}
 /**
  *  \brief
  *      Returns the palette number used to display text.
@@ -211,7 +216,7 @@ VDPPlan VDP_getTextPlan();
  *  \see VDP_drawText(..)
  *  \see VDP_clearText(..)
  */
-u16 VDP_getTextPalette();
+u16 VDP_getTextPalette() { return 0; }
 /**
  *  \brief
  *      Returns the priority used to display text.
@@ -219,7 +224,7 @@ u16 VDP_getTextPalette();
  *  \see VDP_drawText(..)
  *  \see VDP_clearText(..)
  */
-u16 VDP_getTextPriority();
+u16 VDP_getTextPriority() { return 0; }
 
 /**
  *  \brief
@@ -235,7 +240,7 @@ u16 VDP_getTextPriority();
  *  \see VDP_drawText(..)
  *  \see VDP_clearText(..)
  */
-void VDP_setTextPlan(VDPPlan plan);
+void VDP_setTextPlan(VDPPlan plan) {}
 /**
  *  \brief
  *      Define the palette to use to display text.
@@ -246,7 +251,7 @@ void VDP_setTextPlan(VDPPlan plan);
  *  \see VDP_drawText(..)
  *  \see VDP_clearText(..)
  */
-void VDP_setTextPalette(u16 palette);
+void VDP_setTextPalette(u16 palette) {}
 /**
  *  \brief
  *      Define the priority to use to display text.
@@ -259,7 +264,7 @@ void VDP_setTextPalette(u16 palette);
  *  \see VDP_drawText(..)
  *  \see VDP_clearText(..)
  */
-void VDP_setTextPriority(u16 prio);
+void VDP_setTextPriority(u16 prio) {}
 
 /**
  *  \brief
@@ -283,7 +288,7 @@ void VDP_setTextPriority(u16 prio);
  *  \see VDP_setTextPriority(..)
  *  \see VDP_setTextPlan(..)
  */
-void VDP_drawTextBG(VDPPlan plan, const char *str, u16 x, u16 y);
+void VDP_drawTextBG(VDPPlan plan, const char *str, u16 x, u16 y) {}
 /**
  *  \brief
  *      Clear a single line portion of text.
@@ -305,7 +310,7 @@ void VDP_drawTextBG(VDPPlan plan, const char *str, u16 x, u16 y);
  *  \see VDP_clearTextArea(..)
  *  \see VDP_clearTextLine(..)
  */
-void VDP_clearTextBG(VDPPlan plan, u16 x, u16 y, u16 w);
+void VDP_clearTextBG(VDPPlan plan, u16 x, u16 y, u16 w) {}
 /**
  *  \brief
  *      Clear a specific area of text.
@@ -329,7 +334,7 @@ void VDP_clearTextBG(VDPPlan plan, u16 x, u16 y, u16 w);
  *  \see VDP_clearText(..)
  *  \see VDP_clearTextLine(..)
  */
-void VDP_clearTextAreaBG(VDPPlan plan, u16 x, u16 y, u16 w, u16 h);
+void VDP_clearTextAreaBG(VDPPlan plan, u16 x, u16 y, u16 w, u16 h) {}
 /**
  *  \brief
  *      Clear a complete line of text.
@@ -347,7 +352,7 @@ void VDP_clearTextAreaBG(VDPPlan plan, u16 x, u16 y, u16 w, u16 h);
  *  \see VDP_clearText(..)
  *  \see VDP_clearTextArea(..)
  */
-void VDP_clearTextLineBG(VDPPlan plan, u16 y);
+void VDP_clearTextLineBG(VDPPlan plan, u16 y) {}
 
 /**
  *  \brief
@@ -365,7 +370,7 @@ void VDP_clearTextLineBG(VDPPlan plan, u16 y);
  *  \see VDP_setTextPriority(..)
  *  \see VDP_setTextPlan(..)
  */
-void VDP_drawText(const char *str, u16 x, u16 y);
+void VDP_drawText(const char *str, u16 x, u16 y) {}
 /**
  *  \brief
  *      Clear a single line portion of text.
@@ -381,7 +386,7 @@ void VDP_drawText(const char *str, u16 x, u16 y);
  *  \see VDP_clearTextArea(..)
  *  \see VDP_clearTextLine(..)
  */
-void VDP_clearText(u16 x, u16 y, u16 w);
+void VDP_clearText(u16 x, u16 y, u16 w) {}
 /**
  *  \brief
  *      Clear a specific area of text.
@@ -399,7 +404,7 @@ void VDP_clearText(u16 x, u16 y, u16 w);
  *  \see VDP_clearText(..)
  *  \see VDP_clearTextLine(..)
  */
-void VDP_clearTextArea(u16 x, u16 y, u16 w, u16 h);
+void VDP_clearTextArea(u16 x, u16 y, u16 w, u16 h) {}
 /**
  *  \brief
  *      Clear a complete line of text.
@@ -411,7 +416,7 @@ void VDP_clearTextArea(u16 x, u16 y, u16 w, u16 h);
  *  \see VDP_clearText(..)
  *  \see VDP_clearTextArea(..)
  */
-void VDP_clearTextLine(u16 y);
+void VDP_clearTextLine(u16 y) {}
 
 /**
  *  \brief
@@ -439,7 +444,7 @@ void VDP_clearTextLine(u16 y);
  *
  *  \see VDP_loadBMPTileData()
  */
-u16 VDP_drawBitmap(VDPPlan plan, const Bitmap *bitmap, u16 x, u16 y);
+u16 VDP_drawBitmap( VDPPlan plan, const Bitmap *bitmap, u16 x, u16 y ) { return 0; }
 /**
  *  \brief
  *      Draw Bitmap in specified background plan and at given position.
@@ -470,7 +475,7 @@ u16 VDP_drawBitmap(VDPPlan plan, const Bitmap *bitmap, u16 x, u16 y);
  *
  *  \see VDP_loadBMPTileData()
  */
-u16 VDP_drawBitmapEx(VDPPlan plan, const Bitmap *bitmap, u16 basetile, u16 x, u16 y, u16 loadpal);
+u16 VDP_drawBitmapEx( VDPPlan plan, const Bitmap *bitmap, u16 basetile, u16 x, u16 y, u16 loadpal ) { return 0; }
 
 /**
  *  \brief
@@ -496,7 +501,7 @@ u16 VDP_drawBitmapEx(VDPPlan plan, const Bitmap *bitmap, u16 basetile, u16 x, u1
  *
  *  \see VDP_drawImageEx()
  */
-u16 VDP_drawImage(VDPPlan plan, const Image *image, u16 x, u16 y);
+u16 VDP_drawImage(VDPPlan plan, const Image *image, u16 x, u16 y) { return 0; }
 /**
  *  \brief
  *      Draw Map at the specified plan position.
@@ -531,7 +536,7 @@ u16 VDP_drawImage(VDPPlan plan, const Image *image, u16 x, u16 y);
  *
  *  \see VDP_drawImage()
  */
-u16 VDP_drawImageEx(VDPPlan plan, const Image *image, u16 basetile, u16 x, u16 y, u16 loadpal, TransferMethod tm);
+u16 VDP_drawImageEx(VDPPlan plan, const Image *image, u16 basetile, u16 x, u16 y, u16 loadpal, TransferMethod tm) { return 0; }
 
 
 #endif // _VDP_BG_H_

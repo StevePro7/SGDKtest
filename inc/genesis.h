@@ -8,26 +8,27 @@
 #include "sys.h"
 
 #include "memory.h"
-//#include "tools.h"
+#include "tools.h"
 
 //#include "font.h"
 #include "string.h"
 
-//#include "tab_cnv.h"
+#include "tab_cnv.h"
 
 #include "maths.h"
 #include "maths3D.h"
 
-//#include "vdp.h"
-//#include "vdp_bg.h"
+#include "vdp.h"
+#include "vdp_bg.h"
 #include "vdp_dma.h"
 #include "vdp_pal.h"
 #include "vdp_spr.h"
-//#include "vdp_tile.h"
+#include "vdp_tile.h"
 
 #include "vram.h"
 #include "dma.h"
 
+#include "bmp.h"
 
 #include "sound.h"
 #include "xgm.h"
