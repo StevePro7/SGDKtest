@@ -1,7 +1,17 @@
+*.sms
+*asm/*
+*dev/.vs/*
+*dev/*db
 *bin
 *obj
-*.db
-*.opendb
+*.vcxproj.user
+*.asm
+*.lst
+*.sym
+*.ihx
+*.lk
+*.noi
+
 
 # Prerequisites
 *.d
