@@ -145,44 +145,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\inc\asm.h" />
-    <ClInclude Include="..\inc\bmp.h" />
-    <ClInclude Include="..\inc\config.h" />
-    <ClInclude Include="..\inc\dma.h" />
-    <ClInclude Include="..\inc\fat16.h" />
-    <ClInclude Include="..\inc\font.h" />
-    <ClInclude Include="..\inc\genesis.h" />
-    <ClInclude Include="..\inc\genres.h" />
-    <ClInclude Include="..\inc\joy.h" />
-    <ClInclude Include="..\inc\kdebug.h" />
-    <ClInclude Include="..\inc\maths.h" />
-    <ClInclude Include="..\inc\maths3D.h" />
-    <ClInclude Include="..\inc\memory.h" />
-    <ClInclude Include="..\inc\psg.h" />
-    <ClInclude Include="..\inc\smp_null.h" />
-    <ClInclude Include="..\inc\smp_null_pcm.h" />
-    <ClInclude Include="..\inc\sound.h" />
-    <ClInclude Include="..\inc\sprite_eng.h" />
-    <ClInclude Include="..\inc\sram.h" />
-    <ClInclude Include="..\inc\string.h" />
-    <ClInclude Include="..\inc\sys.h" />
-    <ClInclude Include="..\inc\tab_cnv.h" />
-    <ClInclude Include="..\inc\tfcplay.h" />
-    <ClInclude Include="..\inc\tile_cache.h" />
-    <ClInclude Include="..\inc\timer.h" />
-    <ClInclude Include="..\inc\tools.h" />
-    <ClInclude Include="..\inc\types.h" />
-    <ClInclude Include="..\inc\vdp.h" />
-    <ClInclude Include="..\inc\vdp_bg.h" />
-    <ClInclude Include="..\inc\vdp_dma.h" />
-    <ClInclude Include="..\inc\vdp_pal.h" />
-    <ClInclude Include="..\inc\vdp_spr.h" />
-    <ClInclude Include="..\inc\vdp_tile.h" />
-    <ClInclude Include="..\inc\vram.h" />
-    <ClInclude Include="..\inc\xgm.h" />
-    <ClInclude Include="..\inc\ym2612.h" />
-    <ClInclude Include="..\inc\z80_ctrl.h" />
-    <ClInclude Include="..\res\libres.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
