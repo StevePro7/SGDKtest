@@ -145,9 +145,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\lib\joy.h" />
+    <ClInclude Include="..\lib\types.h" />
+    <ClInclude Include="..\lib\vram.h" />
+    <ClInclude Include="..\lib\xgm.h" />
+    <ClInclude Include="..\lib\ym2612.h" />
+    <ClInclude Include="..\lib\z80_ctrl.h" />
+    <ClInclude Include="..\lib\z80_mvsc.h" />
+    <ClInclude Include="..\lib\z80_vgm.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\lib\joy.c" />
+    <ClCompile Include="..\lib\types.c" />
+    <ClCompile Include="..\lib\vram.c" />
+    <ClCompile Include="..\lib\xgm.c" />
+    <ClCompile Include="..\lib\ym2612.c" />
+    <ClCompile Include="..\lib\z80_ctrl.c" />
+    <ClCompile Include="..\lib\z80_mvsc.c" />
+    <ClCompile Include="..\lib\z80_vgm.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
