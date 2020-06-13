@@ -72,6 +72,18 @@
     <ClCompile Include="..\lib\genesis.c">
       <Filter>Source Files\lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\lib\sound.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\string.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\memory.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\maths3D.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -123,6 +135,18 @@
       <Filter>Header Files\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\genesis.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\sound.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\string.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\memory.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\maths3D.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
   </ItemGroup>

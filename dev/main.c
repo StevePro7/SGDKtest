@@ -18,6 +18,8 @@ void main()
 	u8 test = z80_vgm[ 2 ];
 	u8 code = HALT_Z80_ON_DMA;
 
+	char buffer[ 10 ] = "STEVE PRO\0";
+
 	VAR2REG_B( 1, 2 );
 
 	VRAM_releaseRegion( NULL );
@@ -29,5 +31,11 @@ void main()
 	JOY_setEventHandler( myJoyHandler );
 
 	test = evd_mmcInit();
+
+	SND_stopPlay_PCM();
+
+	fix16ToStr( 1, buffer, 2 );
+
+	MEM_pack();
 	return;
 }

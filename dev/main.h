@@ -14,6 +14,14 @@
 #include "..\lib\joy.h"
 #include "..\lib\kdebug.h"
 
+//#include "..\lib\maths.h"
+//#include "..\lib\maths3D.h"
+
+#include "..\lib\memory.h"
+
+#include "..\lib\sound.h"
+#include "..\lib\string.h"
+
 #include "..\lib\types.h"
 #include "..\lib\vram.h"
 #include "..\lib\xgm.h"

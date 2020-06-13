@@ -15,3 +15,8 @@ New library
 genesis.h
 bmp.h
 dma.h
+mapper.h
+maths.h
+
+pal.h
+...

@@ -154,6 +154,10 @@
     <ClInclude Include="..\lib\genesis.h" />
     <ClInclude Include="..\lib\joy.h" />
     <ClInclude Include="..\lib\kdebug.h" />
+    <ClInclude Include="..\lib\maths3D.h" />
+    <ClInclude Include="..\lib\memory.h" />
+    <ClInclude Include="..\lib\sound.h" />
+    <ClInclude Include="..\lib\string.h" />
     <ClInclude Include="..\lib\types.h" />
     <ClInclude Include="..\lib\vram.h" />
     <ClInclude Include="..\lib\xgm.h" />
@@ -173,6 +177,10 @@
     <ClCompile Include="..\lib\genesis.c" />
     <ClCompile Include="..\lib\joy.c" />
     <ClCompile Include="..\lib\kdebug.c" />
+    <ClCompile Include="..\lib\maths3D.c" />
+    <ClCompile Include="..\lib\memory.c" />
+    <ClCompile Include="..\lib\sound.c" />
+    <ClCompile Include="..\lib\string.c" />
     <ClCompile Include="..\lib\types.c" />
     <ClCompile Include="..\lib\vram.c" />
     <ClCompile Include="..\lib\xgm.c" />
