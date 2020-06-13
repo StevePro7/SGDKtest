@@ -145,7 +145,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\lib\asm.h" />
+    <ClInclude Include="..\lib\bmp.h" />
+    <ClInclude Include="..\lib\config.h" />
+    <ClInclude Include="..\lib\dma.h" />
+    <ClInclude Include="..\lib\everdrive.h" />
+    <ClInclude Include="..\lib\fat16.h" />
     <ClInclude Include="..\lib\joy.h" />
+    <ClInclude Include="..\lib\kdebug.h" />
     <ClInclude Include="..\lib\types.h" />
     <ClInclude Include="..\lib\vram.h" />
     <ClInclude Include="..\lib\xgm.h" />
@@ -156,7 +163,13 @@
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\lib\asm.c" />
+    <ClCompile Include="..\lib\bmp.c" />
+    <ClCompile Include="..\lib\config.c" />
+    <ClCompile Include="..\lib\dma.c" />
+    <ClCompile Include="..\lib\fat16.c" />
     <ClCompile Include="..\lib\joy.c" />
+    <ClCompile Include="..\lib\kdebug.c" />
     <ClCompile Include="..\lib\types.c" />
     <ClCompile Include="..\lib\vram.c" />
     <ClCompile Include="..\lib\xgm.c" />

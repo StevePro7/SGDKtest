@@ -1,7 +1,16 @@
 #ifndef __MAIN__
 #define __MAIN__
 
+#include "..\lib\asm.h"
+//#include "..\lib\bmp.h"
+#include "..\lib\config.h"
+//#include "..\lib\dma.h"
+#include "..\lib\everdrive.h"
+
+
 #include "..\lib\joy.h"
+#include "..\lib\kdebug.h"
+
 #include "..\lib\types.h"
 #include "..\lib\vram.h"
 #include "..\lib\xgm.h"

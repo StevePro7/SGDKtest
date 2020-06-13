@@ -16,6 +16,9 @@ void main()
 {
 	u8 num = 9;
 	u8 test = z80_vgm[ 2 ];
+	u8 code = HALT_Z80_ON_DMA;
+
+	VAR2REG_B( 1, 2 );
 
 	VRAM_releaseRegion( NULL );
 	XGM_resumePlay();
@@ -24,5 +27,7 @@ void main()
 
 	JOY_init();
 	JOY_setEventHandler( myJoyHandler );
+
+	test = evd_mmcInit();
 	return;
 }
