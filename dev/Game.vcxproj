@@ -151,6 +151,7 @@
     <ClInclude Include="..\lib\dma.h" />
     <ClInclude Include="..\lib\everdrive.h" />
     <ClInclude Include="..\lib\fat16.h" />
+    <ClInclude Include="..\lib\genesis.h" />
     <ClInclude Include="..\lib\joy.h" />
     <ClInclude Include="..\lib\kdebug.h" />
     <ClInclude Include="..\lib\types.h" />
@@ -167,7 +168,9 @@
     <ClCompile Include="..\lib\bmp.c" />
     <ClCompile Include="..\lib\config.c" />
     <ClCompile Include="..\lib\dma.c" />
+    <ClCompile Include="..\lib\everdrive.c" />
     <ClCompile Include="..\lib\fat16.c" />
+    <ClCompile Include="..\lib\genesis.c" />
     <ClCompile Include="..\lib\joy.c" />
     <ClCompile Include="..\lib\kdebug.c" />
     <ClCompile Include="..\lib\types.c" />

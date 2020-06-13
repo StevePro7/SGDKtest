@@ -66,6 +66,12 @@
     <ClCompile Include="..\lib\fat16.c">
       <Filter>Source Files\lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\lib\everdrive.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\genesis.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -114,6 +120,9 @@
       <Filter>Header Files\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\fat16.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\genesis.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
   </ItemGroup>

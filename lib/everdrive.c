@@ -1,6 +1,6 @@
 #include "everdrive.h"
 
-u16 cfg;
+u16 cfg = 0;
 
 
 //SD/MMC card initialization. should be run just one times, aer this cart will be ready for work
@@ -50,6 +50,3 @@ void evd_eprProgBlock( u16 *data, u32 rom_addr, u32 len )
 void evd_init( u16 def_rom_bank, u8 _is_ram_app )
 {
 }
-
-
-#endif
