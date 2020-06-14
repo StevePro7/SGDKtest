@@ -18,6 +18,7 @@ void main()
 	u8 test = z80_vgm[ 2 ];
 	u8 code = HALT_Z80_ON_DMA;
 	u16 big = 300;
+	u32 value;
 
 	char buffer[ 10 ] = "STEVE PRO\0";
 
@@ -44,5 +45,16 @@ void main()
 	M3D_buildMat3D( NULL );
 
 	PAL_waitFadeCompletion();
+
+	PSG_init();
+
+	SYS_disableInts();
+	SYS_enableInts();
+
+	value = getTick();
+
+	test = fat16Init();
+
+	DMA_init();
 	return;
 }
