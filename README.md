@@ -14,12 +14,7 @@ https://blog.bigevilcorporation.co.uk/2012/02/28/sega-megadrive-1-getting-starte
 New library
 genesis.h
 
-bmp.h
-dma.h
+header files that are in the "inc" folder but don't seem to be included:
+everdrive.h
 fat16.h
-mapper.h
-vdp_bg.h
-
-//maths.h
-//pal.h
-...
+z80_vgm.h

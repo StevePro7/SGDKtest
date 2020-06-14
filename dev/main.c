@@ -15,7 +15,8 @@ void myJoyHandler( u16 joy, u16 changed, u16 state )
 void main()
 {
 	u8 num = 9;
-	u8 test = z80_vgm[ 2 ];
+	u8 test;
+	//u8 test = z80_vgm[ 2 ];
 	u8 code = HALT_Z80_ON_DMA;
 	u16 big = 300;
 	u32 value;
@@ -32,7 +33,7 @@ void main()
 	JOY_init();
 	JOY_setEventHandler( myJoyHandler );
 
-	test = evd_mmcInit();
+	//test = evd_mmcInit();
 
 	SND_stopPlay_PCM();
 
@@ -53,7 +54,7 @@ void main()
 
 	value = getTick();
 
-	test = fat16Init();
+	//test = fat16Init();
 
 	DMA_init();
 	VDP_clearSprites();
