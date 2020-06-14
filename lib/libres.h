@@ -1,3 +1,8 @@
+#include "bmp.h"
+#include "pal.h"
+#include "types.h"
+#include "vdp_tile.h"
+
 #ifndef _LIBRES_H_
 #define _LIBRES_H_
 

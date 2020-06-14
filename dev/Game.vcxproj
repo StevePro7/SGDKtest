@@ -151,9 +151,12 @@
     <ClInclude Include="..\lib\dma.h" />
     <ClInclude Include="..\lib\everdrive.h" />
     <ClInclude Include="..\lib\fat16.h" />
+    <ClInclude Include="..\lib\font.h" />
     <ClInclude Include="..\lib\genesis.h" />
     <ClInclude Include="..\lib\joy.h" />
     <ClInclude Include="..\lib\kdebug.h" />
+    <ClInclude Include="..\lib\libres.h" />
+    <ClInclude Include="..\lib\mapper.h" />
     <ClInclude Include="..\lib\maths.h" />
     <ClInclude Include="..\lib\maths3D.h" />
     <ClInclude Include="..\lib\memory.h" />
@@ -162,6 +165,7 @@
     <ClInclude Include="..\lib\smp_null.h" />
     <ClInclude Include="..\lib\smp_null_pcm.h" />
     <ClInclude Include="..\lib\sound.h" />
+    <ClInclude Include="..\lib\sprite_eng.h" />
     <ClInclude Include="..\lib\string.h" />
     <ClInclude Include="..\lib\sys.h" />
     <ClInclude Include="..\lib\tab_cnv.h" />
@@ -189,9 +193,12 @@
     <ClCompile Include="..\lib\dma.c" />
     <ClCompile Include="..\lib\everdrive.c" />
     <ClCompile Include="..\lib\fat16.c" />
+    <ClCompile Include="..\lib\font.c" />
     <ClCompile Include="..\lib\genesis.c" />
     <ClCompile Include="..\lib\joy.c" />
     <ClCompile Include="..\lib\kdebug.c" />
+    <ClCompile Include="..\lib\libres.c" />
+    <ClCompile Include="..\lib\mapper.c" />
     <ClCompile Include="..\lib\maths.c" />
     <ClCompile Include="..\lib\maths3D.c" />
     <ClCompile Include="..\lib\memory.c" />
@@ -200,6 +207,7 @@
     <ClCompile Include="..\lib\smp_null.c" />
     <ClCompile Include="..\lib\smp_null_pcm.c" />
     <ClCompile Include="..\lib\sound.c" />
+    <ClCompile Include="..\lib\sprite_eng.c" />
     <ClCompile Include="..\lib\string.c" />
     <ClCompile Include="..\lib\sys.c" />
     <ClCompile Include="..\lib\tab_cnv.c" />

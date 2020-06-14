@@ -60,5 +60,10 @@ void main()
 	VDP_interruptFade();
 
 	VDP_doVRamDMACopy( 1, 2, 3 );
+	BMP_clear();
+
+	big = SYS_getBank( 7 );
+
+	SPR_clear();
 	return;
 }

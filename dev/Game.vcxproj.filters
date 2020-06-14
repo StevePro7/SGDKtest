@@ -129,6 +129,18 @@
     <ClCompile Include="..\lib\vdp_bg.c">
       <Filter>Source Files\lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\lib\libres.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\font.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\mapper.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\sprite_eng.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -237,6 +249,18 @@
       <Filter>Header Files\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\lib\vdp_bg.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\libres.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\font.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\mapper.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\sprite_eng.h">
       <Filter>Header Files\lib</Filter>
     </ClInclude>
   </ItemGroup>

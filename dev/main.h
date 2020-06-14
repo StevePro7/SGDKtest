@@ -5,16 +5,16 @@
 
 
 #include "..\lib\asm.h"
-//#include "..\lib\bmp.h"
+#include "..\lib\bmp.h"
 #include "..\lib\config.h"
 #include "..\lib\dma.h"
 #include "..\lib\everdrive.h"
 #include "..\lib\fat16.h"
-
-
+#include "..\lib\font.h"
 #include "..\lib\joy.h"
 #include "..\lib\kdebug.h"
-
+#include "..\lib\libres.h"
+#include "..\lib\mapper.h"
 #include "..\lib\maths.h"
 #include "..\lib\maths3D.h"
 #include "..\lib\memory.h"
@@ -22,15 +22,15 @@
 #include "..\lib\psg.h"
 #include "..\lib\smp_null.h"
 #include "..\lib\smp_null_pcm.h"
+#include "..\lib\sound.h"
 
+#include "..\lib\sprite_eng.h"
+#include "..\lib\string.h"
 #include "..\lib\sys.h"
 
 #include "..\lib\tab_cnv.h"
 #include "..\lib\tab_vol.h"
 #include "..\lib\timer.h"
-
-#include "..\lib\sound.h"
-#include "..\lib\string.h"
 
 #include "..\lib\types.h"
 
