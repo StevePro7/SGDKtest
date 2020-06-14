@@ -33,6 +33,13 @@
 #include "..\lib\string.h"
 
 #include "..\lib\types.h"
+
+#include "..\lib\vdp.h"
+#include "..\lib\vdp_dma.h"
+
+#include "..\lib\vdp_pal.h"
+#include "..\lib\vdp_spr.h"
+#include "..\lib\vdp_tile.h"
 #include "..\lib\vram.h"
 #include "..\lib\xgm.h"
 #include "..\lib\ym2612.h"

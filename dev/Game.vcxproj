@@ -168,6 +168,12 @@
     <ClInclude Include="..\lib\tab_vol.h" />
     <ClInclude Include="..\lib\timer.h" />
     <ClInclude Include="..\lib\types.h" />
+    <ClInclude Include="..\lib\vdp.h" />
+    <ClInclude Include="..\lib\vdp_bg.h" />
+    <ClInclude Include="..\lib\vdp_dma.h" />
+    <ClInclude Include="..\lib\vdp_pal.h" />
+    <ClInclude Include="..\lib\vdp_spr.h" />
+    <ClInclude Include="..\lib\vdp_tile.h" />
     <ClInclude Include="..\lib\vram.h" />
     <ClInclude Include="..\lib\xgm.h" />
     <ClInclude Include="..\lib\ym2612.h" />
@@ -200,6 +206,12 @@
     <ClCompile Include="..\lib\tab_vol.c" />
     <ClCompile Include="..\lib\timer.c" />
     <ClCompile Include="..\lib\types.c" />
+    <ClCompile Include="..\lib\vdp.c" />
+    <ClCompile Include="..\lib\vdp_bg.c" />
+    <ClCompile Include="..\lib\vdp_dma.c" />
+    <ClCompile Include="..\lib\vdp_pal.c" />
+    <ClCompile Include="..\lib\vdp_spr.c" />
+    <ClCompile Include="..\lib\vdp_tile.c" />
     <ClCompile Include="..\lib\vram.c" />
     <ClCompile Include="..\lib\xgm.c" />
     <ClCompile Include="..\lib\ym2612.c" />

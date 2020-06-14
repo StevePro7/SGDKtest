@@ -56,5 +56,9 @@ void main()
 	test = fat16Init();
 
 	DMA_init();
+	VDP_clearSprites();
+	VDP_interruptFade();
+
+	VDP_doVRamDMACopy( 1, 2, 3 );
 	return;
 }
