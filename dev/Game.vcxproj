@@ -166,11 +166,13 @@
     <ClInclude Include="..\lib\smp_null_pcm.h" />
     <ClInclude Include="..\lib\sound.h" />
     <ClInclude Include="..\lib\sprite_eng.h" />
+    <ClInclude Include="..\lib\sram.h" />
     <ClInclude Include="..\lib\string.h" />
     <ClInclude Include="..\lib\sys.h" />
     <ClInclude Include="..\lib\tab_cnv.h" />
     <ClInclude Include="..\lib\tab_vol.h" />
     <ClInclude Include="..\lib\timer.h" />
+    <ClInclude Include="..\lib\tools.h" />
     <ClInclude Include="..\lib\types.h" />
     <ClInclude Include="..\lib\vdp.h" />
     <ClInclude Include="..\lib\vdp_bg.h" />
@@ -208,11 +210,13 @@
     <ClCompile Include="..\lib\smp_null_pcm.c" />
     <ClCompile Include="..\lib\sound.c" />
     <ClCompile Include="..\lib\sprite_eng.c" />
+    <ClCompile Include="..\lib\sram.c" />
     <ClCompile Include="..\lib\string.c" />
     <ClCompile Include="..\lib\sys.c" />
     <ClCompile Include="..\lib\tab_cnv.c" />
     <ClCompile Include="..\lib\tab_vol.c" />
     <ClCompile Include="..\lib\timer.c" />
+    <ClCompile Include="..\lib\tools.c" />
     <ClCompile Include="..\lib\types.c" />
     <ClCompile Include="..\lib\vdp.c" />
     <ClCompile Include="..\lib\vdp_bg.c" />

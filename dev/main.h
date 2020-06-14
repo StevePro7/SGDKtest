@@ -23,20 +23,18 @@
 #include "..\lib\smp_null.h"
 #include "..\lib\smp_null_pcm.h"
 #include "..\lib\sound.h"
-
 #include "..\lib\sprite_eng.h"
+#include "..\lib\sram.h"
 #include "..\lib\string.h"
 #include "..\lib\sys.h"
-
 #include "..\lib\tab_cnv.h"
 #include "..\lib\tab_vol.h"
 #include "..\lib\timer.h"
-
+#include "..\lib\tools.h"
 #include "..\lib\types.h"
-
 #include "..\lib\vdp.h"
+#include "..\lib\vdp_BG.h"
 #include "..\lib\vdp_dma.h"
-
 #include "..\lib\vdp_pal.h"
 #include "..\lib\vdp_spr.h"
 #include "..\lib\vdp_tile.h"

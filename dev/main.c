@@ -65,5 +65,10 @@ void main()
 	big = SYS_getBank( 7 );
 
 	SPR_clear();
+
+	SRAM_disable();
+	SRAM_enable();
+
+	qsort_s32( NULL, 10, 20 );
 	return;
 }
