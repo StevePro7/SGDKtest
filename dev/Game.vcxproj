@@ -154,8 +154,12 @@
     <ClInclude Include="..\lib\genesis.h" />
     <ClInclude Include="..\lib\joy.h" />
     <ClInclude Include="..\lib\kdebug.h" />
+    <ClInclude Include="..\lib\maths.h" />
     <ClInclude Include="..\lib\maths3D.h" />
     <ClInclude Include="..\lib\memory.h" />
+    <ClInclude Include="..\lib\pal.h" />
+    <ClInclude Include="..\lib\smp_null.h" />
+    <ClInclude Include="..\lib\smp_null_pcm.h" />
     <ClInclude Include="..\lib\sound.h" />
     <ClInclude Include="..\lib\string.h" />
     <ClInclude Include="..\lib\types.h" />
@@ -177,8 +181,12 @@
     <ClCompile Include="..\lib\genesis.c" />
     <ClCompile Include="..\lib\joy.c" />
     <ClCompile Include="..\lib\kdebug.c" />
+    <ClCompile Include="..\lib\maths.c" />
     <ClCompile Include="..\lib\maths3D.c" />
     <ClCompile Include="..\lib\memory.c" />
+    <ClCompile Include="..\lib\pal.c" />
+    <ClCompile Include="..\lib\smp_null.c" />
+    <ClCompile Include="..\lib\smp_null_pcm.c" />
     <ClCompile Include="..\lib\sound.c" />
     <ClCompile Include="..\lib\string.c" />
     <ClCompile Include="..\lib\types.c" />

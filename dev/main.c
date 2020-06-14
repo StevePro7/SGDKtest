@@ -17,6 +17,7 @@ void main()
 	u8 num = 9;
 	u8 test = z80_vgm[ 2 ];
 	u8 code = HALT_Z80_ON_DMA;
+	u16 big = 300;
 
 	char buffer[ 10 ] = "STEVE PRO\0";
 
@@ -37,5 +38,11 @@ void main()
 	fix16ToStr( 1, buffer, 2 );
 
 	MEM_pack();
+
+	big = getLog2Int( 7 );
+
+	M3D_buildMat3D( NULL );
+
+	PAL_waitFadeCompletion();
 	return;
 }

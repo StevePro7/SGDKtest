@@ -14,10 +14,13 @@
 #include "..\lib\joy.h"
 #include "..\lib\kdebug.h"
 
-//#include "..\lib\maths.h"
-//#include "..\lib\maths3D.h"
-
+#include "..\lib\maths.h"
+#include "..\lib\maths3D.h"
 #include "..\lib\memory.h"
+#include "..\lib\pal.h"
+#include "..\lib\smp_null.h"
+#include "..\lib\smp_null_pcm.h"
+
 
 #include "..\lib\sound.h"
 #include "..\lib\string.h"
