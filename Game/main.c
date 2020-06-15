@@ -12,10 +12,10 @@ void myJoyHandler( u16 joy, u16 changed, u16 state )
 	}
 }
 
-void main()
+int main()
 {
 	u8 num = 9;
-	u8 test;
+//	u8 test;
 	//u8 test = z80_vgm[ 2 ];
 	u8 code = HALT_Z80_ON_DMA;
 	u16 big = 300;
@@ -71,5 +71,5 @@ void main()
 	SRAM_enable();
 
 	qsort_s32( NULL, 10, 20 );
-	return;
+	return 0;
 }

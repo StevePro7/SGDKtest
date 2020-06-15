@@ -71,8 +71,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)..\bin\$(ConfigurationName)</OutDir>
-    <IntDir>$(SolutionDir)..\obj\$(ConfigurationName)</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(ConfigurationName)</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(ConfigurationName)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -90,11 +90,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\inc;$(SolutionDir)..\res</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Library\lib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>_genesis.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Library\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -145,91 +147,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\lib\asm.h" />
-    <ClInclude Include="..\lib\bmp.h" />
-    <ClInclude Include="..\lib\config.h" />
-    <ClInclude Include="..\lib\dma.h" />
-    <ClInclude Include="..\lib\everdrive.h" />
-    <ClInclude Include="..\lib\fat16.h" />
-    <ClInclude Include="..\lib\font.h" />
-    <ClInclude Include="..\lib\genesis.h" />
-    <ClInclude Include="..\lib\joy.h" />
-    <ClInclude Include="..\lib\kdebug.h" />
-    <ClInclude Include="..\lib\libres.h" />
-    <ClInclude Include="..\lib\mapper.h" />
-    <ClInclude Include="..\lib\maths.h" />
-    <ClInclude Include="..\lib\maths3D.h" />
-    <ClInclude Include="..\lib\memory.h" />
-    <ClInclude Include="..\lib\pal.h" />
-    <ClInclude Include="..\lib\psg.h" />
-    <ClInclude Include="..\lib\smp_null.h" />
-    <ClInclude Include="..\lib\smp_null_pcm.h" />
-    <ClInclude Include="..\lib\sound.h" />
-    <ClInclude Include="..\lib\sprite_eng.h" />
-    <ClInclude Include="..\lib\sram.h" />
-    <ClInclude Include="..\lib\string.h" />
-    <ClInclude Include="..\lib\sys.h" />
-    <ClInclude Include="..\lib\tab_cnv.h" />
-    <ClInclude Include="..\lib\tab_vol.h" />
-    <ClInclude Include="..\lib\timer.h" />
-    <ClInclude Include="..\lib\tools.h" />
-    <ClInclude Include="..\lib\types.h" />
-    <ClInclude Include="..\lib\vdp.h" />
-    <ClInclude Include="..\lib\vdp_bg.h" />
-    <ClInclude Include="..\lib\vdp_dma.h" />
-    <ClInclude Include="..\lib\vdp_pal.h" />
-    <ClInclude Include="..\lib\vdp_spr.h" />
-    <ClInclude Include="..\lib\vdp_tile.h" />
-    <ClInclude Include="..\lib\vram.h" />
-    <ClInclude Include="..\lib\xgm.h" />
-    <ClInclude Include="..\lib\ym2612.h" />
-    <ClInclude Include="..\lib\z80_ctrl.h" />
-    <ClInclude Include="..\lib\z80_mvsc.h" />
-    <ClInclude Include="..\lib\z80_vgm.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\lib\asm.c" />
-    <ClCompile Include="..\lib\bmp.c" />
-    <ClCompile Include="..\lib\config.c" />
-    <ClCompile Include="..\lib\dma.c" />
-    <ClCompile Include="..\lib\everdrive.c" />
-    <ClCompile Include="..\lib\fat16.c" />
-    <ClCompile Include="..\lib\font.c" />
-    <ClCompile Include="..\lib\genesis.c" />
-    <ClCompile Include="..\lib\joy.c" />
-    <ClCompile Include="..\lib\kdebug.c" />
-    <ClCompile Include="..\lib\libres.c" />
-    <ClCompile Include="..\lib\mapper.c" />
-    <ClCompile Include="..\lib\maths.c" />
-    <ClCompile Include="..\lib\maths3D.c" />
-    <ClCompile Include="..\lib\memory.c" />
-    <ClCompile Include="..\lib\pal.c" />
-    <ClCompile Include="..\lib\psg.c" />
-    <ClCompile Include="..\lib\smp_null.c" />
-    <ClCompile Include="..\lib\smp_null_pcm.c" />
-    <ClCompile Include="..\lib\sound.c" />
-    <ClCompile Include="..\lib\sprite_eng.c" />
-    <ClCompile Include="..\lib\sram.c" />
-    <ClCompile Include="..\lib\string.c" />
-    <ClCompile Include="..\lib\sys.c" />
-    <ClCompile Include="..\lib\tab_cnv.c" />
-    <ClCompile Include="..\lib\tab_vol.c" />
-    <ClCompile Include="..\lib\timer.c" />
-    <ClCompile Include="..\lib\tools.c" />
-    <ClCompile Include="..\lib\types.c" />
-    <ClCompile Include="..\lib\vdp.c" />
-    <ClCompile Include="..\lib\vdp_bg.c" />
-    <ClCompile Include="..\lib\vdp_dma.c" />
-    <ClCompile Include="..\lib\vdp_pal.c" />
-    <ClCompile Include="..\lib\vdp_spr.c" />
-    <ClCompile Include="..\lib\vdp_tile.c" />
-    <ClCompile Include="..\lib\vram.c" />
-    <ClCompile Include="..\lib\xgm.c" />
-    <ClCompile Include="..\lib\ym2612.c" />
-    <ClCompile Include="..\lib\z80_ctrl.c" />
-    <ClCompile Include="..\lib\z80_mvsc.c" />
-    <ClCompile Include="..\lib\z80_vgm.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
