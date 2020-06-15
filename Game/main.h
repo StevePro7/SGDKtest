@@ -1,9 +1,9 @@
 #ifndef __MAIN__
 #define __MAIN__
 
-/*
-#include "..\lib\genesis.h"
+#include "_genesis.h"
 
+/*
 //#include "..\lib\asm.h"
 //#include "..\lib\bmp.h"
 //#include "..\lib\config.h"

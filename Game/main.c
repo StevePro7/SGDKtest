@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+
 void myJoyHandler( u16 joy, u16 changed, u16 state )
 {
 	if( joy != JOY_1 )
@@ -11,10 +11,9 @@ void myJoyHandler( u16 joy, u16 changed, u16 state )
 	{
 	}
 }
-*/
+
 int main()
 {
-/*	
 	u8 num = 9;
 	u8 test;
 	//u8 test = z80_vgm[ 2 ];
@@ -72,6 +71,5 @@ int main()
 	SRAM_enable();
 
 	qsort_s32( NULL, 10, 20 );
-*/	
 	return 0;
 }
