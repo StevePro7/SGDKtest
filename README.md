@@ -41,3 +41,25 @@ $(IntDir)$(TargetName).pdb
 
 Reference:
 https://stackoverflow.com/questions/7575298/static-library-debug-symbols
+
+Real world example of using the new _genesis.h _genesis.lib _genesis.pdb
+E:\Steven\XNA\SGDK\steveproXNA\test04_lib\lib
+
+
+Finally, example with static lib and resource:
+E:\Steven\XNA\SGDK\steveproXNA\test05_lib_res
+
+Navigate to dev folder + build content [resources]
+e.g.
+cd E:\Steven\XNA\SGDK\steveproXNA\test05_lib_res\dev
+%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen
+
+Add code and dependency references for both F5 and Ctrl+1
+
+
+Final test for today was to try and integrate Remote debugging
+experiments in the past on VS2015 with this latest dev setup
+
+However, doesn't add any value because Ctrl+F5 does not rebuild
+i.e. would not "take" any latest so defeats the purpose;
+would have to run build.bat anyway so = no value add..!!
