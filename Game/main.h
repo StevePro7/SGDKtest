@@ -1,6 +1,7 @@
 #ifndef __MAIN__
 #define __MAIN__
 
+/*
 #include "..\lib\genesis.h"
 
 //#include "..\lib\asm.h"
@@ -49,5 +50,6 @@
 //#else
 //#include <genesis.h>
 //#endif
+*/
 
 #endif//__MAIN__
