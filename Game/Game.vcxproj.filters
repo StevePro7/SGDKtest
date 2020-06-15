@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\lib">
-      <UniqueIdentifier>{4dd2ddf7-727f-4d92-8a69-8e159dc6591b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\lib">
-      <UniqueIdentifier>{a663a7c0-8fe8-4b40-ad02-235dd36f8457}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">

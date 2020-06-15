@@ -27,3 +27,17 @@ move main into "src" folder and redo
 build lib into header and static lib?
 
 repeat the entire projects / tutorials using the new way
+
+
+15/06/2020
+Static library
+TargetName	_genesis
+
+Properties
+C/C++
+Output Files
+Program Database filename
+$(IntDir)$(TargetName).pdb
+
+Reference:
+https://stackoverflow.com/questions/7575298/static-library-debug-symbols

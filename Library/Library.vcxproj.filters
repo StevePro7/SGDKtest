@@ -38,9 +38,6 @@
     <ClInclude Include="src\font.h">
       <Filter>Header Files\inc</Filter>
     </ClInclude>
-    <ClInclude Include="src\genesis.h">
-      <Filter>Header Files\inc</Filter>
-    </ClInclude>
     <ClInclude Include="src\joy.h">
       <Filter>Header Files\inc</Filter>
     </ClInclude>
@@ -140,6 +137,9 @@
     <ClInclude Include="src\z80_vgm.h">
       <Filter>Header Files\inc</Filter>
     </ClInclude>
+    <ClInclude Include="src\_genesis.h">
+      <Filter>Header Files\inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\asm.c">
@@ -161,9 +161,6 @@
       <Filter>Source Files\src</Filter>
     </ClCompile>
     <ClCompile Include="src\font.c">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\genesis.c">
       <Filter>Source Files\src</Filter>
     </ClCompile>
     <ClCompile Include="src\joy.c">
@@ -263,6 +260,9 @@
       <Filter>Source Files\src</Filter>
     </ClCompile>
     <ClCompile Include="src\z80_vgm.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\_genesis.c">
       <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>

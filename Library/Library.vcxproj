@@ -26,7 +26,7 @@
     <ClInclude Include="src\everdrive.h" />
     <ClInclude Include="src\fat16.h" />
     <ClInclude Include="src\font.h" />
-    <ClInclude Include="src\genesis.h" />
+    <ClInclude Include="src\_genesis.h" />
     <ClInclude Include="src\joy.h" />
     <ClInclude Include="src\kdebug.h" />
     <ClInclude Include="src\libres.h" />
@@ -69,7 +69,7 @@
     <ClCompile Include="src\everdrive.c" />
     <ClCompile Include="src\fat16.c" />
     <ClCompile Include="src\font.c" />
-    <ClCompile Include="src\genesis.c" />
+    <ClCompile Include="src\_genesis.c" />
     <ClCompile Include="src\joy.c" />
     <ClCompile Include="src\kdebug.c" />
     <ClCompile Include="src\libres.c" />
@@ -158,6 +158,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)\bin\$(ConfigurationName)</OutDir>
     <IntDir>$(SolutionDir)\obj\$(ConfigurationName)</IntDir>
+    <TargetName>_genesis</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -166,6 +167,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
