@@ -11,6 +11,12 @@ https://blog.bigevilcorporation.co.uk/
 https://blog.bigevilcorporation.co.uk/2012/02/28/sega-megadrive-1-getting-started/
 
 
+TAGS
+1.0	initial cut having all inline code in header files only [not complete!]
+2.0	latest SGDK 1.51 all header files "as is" but all impl in *.c files
+3.0 refactor *.c files into static lib so include header files lib + pdb
+
+
 New library
 genesis.h
 
