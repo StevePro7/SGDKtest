@@ -1,7 +1,7 @@
 *.sms
 *asm/*
-*dev/.vs/*
-*dev/*db
+*.vs/*
+*db
 *bin
 *obj
 *.vcxproj.user
