@@ -250,7 +250,11 @@ void SPR_releaseSprite(Sprite* sprite)
  *  \brief
  *      Returns the number of active sprite (number of sprite added with SPR_addSprite(..) or SPR_addSpriteEx(..) methods).
  */
-u16 SPR_getNumActiveSprite();
+u16 SPR_getNumActiveSprite()
+{
+	return 0;
+}
+
 /**
  *  \brief
  *      Defragment allocated VRAM for sprites, that can help when sprite allocation fail (SPR_addSprite(..) or SPR_addSpriteEx(..) return <i>NULL</i>).

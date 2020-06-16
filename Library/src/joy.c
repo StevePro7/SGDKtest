@@ -276,7 +276,11 @@ void JOY_waitPressBtn()
  *  \brief
  *      Wait the specified amount of time or until a button is pressed on any connected controller.
  */
-u16 JOY_waitPressBtnTime(u16 ms);
+u16 JOY_waitPressBtnTime( u16 ms )
+{
+	return 0;
+}
+
 /**
  *  \brief
  *      Wait for specified button to be pressed on specified joypad.

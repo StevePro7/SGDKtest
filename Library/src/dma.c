@@ -235,7 +235,11 @@ void DMA_flushQueue()
  *  \brief
  *      Returns the number of transfer currently pending in the DMA queue.
  */
-u16 DMA_getQueueSize();
+u16 DMA_getQueueSize()
+{
+	return 0;
+}
+
 /**
  *  \brief
  *      Returns the size (in byte) of data to be transferred currently present in the DMA queue.<br>

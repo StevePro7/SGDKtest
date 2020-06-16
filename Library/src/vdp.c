@@ -113,7 +113,10 @@ void VDP_setReg(u16 reg, u8 value)
  *  \brief
  *      Returns VDP enable state.
  */
-u8   VDP_getEnable();
+u8 VDP_getEnable()
+{
+	return 0;
+}
 /**
  *  \brief
  *      Set VDP enable state.

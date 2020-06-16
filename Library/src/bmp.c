@@ -368,7 +368,10 @@ void BMP_setPixelsFast( const Pixel *pixels, u16 num )
  *      FALSE (0) is the line is entirely outside bitmap screen (no clip is done).<br>
  *      TRUE if at least one pixel is on screen (line is clipped if needed).
  */
-u16   BMP_clipLine(Line *l);
+u16 BMP_clipLine(Line *l)
+{
+	return 0;
+}
 /**
  *  \brief
  *      Draw a line (no bounds verification).

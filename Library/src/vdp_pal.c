@@ -152,7 +152,10 @@ u16 VDP_isDoingFade()
 /**
  *  \deprecated Use #PAL_waitFadeCompletion(..) instead
  */
-void VDP_waitFadeCompletion();
+void VDP_waitFadeCompletion()
+{
+}
+
 /**
  *  \deprecated Use #PAL_interruptFade() instead
  */

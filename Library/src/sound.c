@@ -7,7 +7,11 @@
  *  \return
  *      Return non zero if PCM player is currently playing a sample
  */
-u8   SND_isPlaying_PCM();
+u8   SND_isPlaying_PCM()
+{
+	return 0;
+}
+
 /**
  *  \brief
  *      Start playing a sample (Single channel PCM player driver).<br>

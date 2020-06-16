@@ -81,3 +81,17 @@ z80)vgm.c
 tab_cnv.c
 tab_vol.c
 sprite_eng.h
+
+Going thru Stephane-D examples
+watch out for this:
+#include <genesis.h>
+
+e.g.
+02-Bench
+I must wrap every instance of this with this:
+#ifdef _CONSOLE
+#include "_genesis.h"
+#pragma warning( disable : 4244 ) 
+#else
+#include <genesis.h>
+#endif
