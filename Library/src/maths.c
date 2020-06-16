@@ -1,5 +1,14 @@
 #include "maths.h"
 
+const fix32 sintab32[1024] = { 0 };
+const fix16 sintab16[1024] = { 0 };
+
+#if (MATH_BIG_TABLES != 0)
+const fix16 log2tab16[0x10000] = { 0 };
+const fix16 log10tab16[0x10000] = { 0 };
+const fix16 sqrttab16[0x10000] = { 0 };
+#endif
+
 /**
  *  \brief
  *      Binary to Decimal conversion.

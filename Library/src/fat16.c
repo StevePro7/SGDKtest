@@ -1,6 +1,6 @@
 #include "fat16.h"
 
-Fat16PBR fat16_pbr;
+Fat16PBR fat16_pbr = { NULL, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, NULL };
 
 
 u8 fat16Init()

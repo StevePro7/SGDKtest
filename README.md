@@ -69,3 +69,15 @@ experiments in the past on VS2015 with this latest dev setup
 However, doesn't add any value because Ctrl+F5 does not rebuild
 i.e. would not "take" any latest so defeats the purpose;
 would have to run build.bat anyway so = no value add..!!
+
+
+16/06/2020
+So I updated some missing extern variables from *.h files to *.c
+and stripped out arrays of multiples to singles
+e.g.
+fat16.c
+maths.c
+z80)vgm.c
+tab_cnv.c
+tab_vol.c
+sprite_eng.h
