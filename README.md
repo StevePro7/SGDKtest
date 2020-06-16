@@ -95,3 +95,12 @@ I must wrap every instance of this with this:
 #else
 #include <genesis.h>
 #endif
+
+
+TODO
+tag the latest 3.1
+
+examples
+01-astrofra		NULL
+02-bench has a lot of warnings
+05-image		NULL
