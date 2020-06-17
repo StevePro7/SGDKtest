@@ -104,3 +104,13 @@ examples
 01-astrofra		NULL
 02-bench has a lot of warnings
 05-image		NULL
+
+
+17/06/2020
+IMPORTANT
+good example of readInput() here
+e:\Steven\XNA\SGDK\TutorialSGDK\09-sprite\dev\src\main.c
+Maybe more aligned to my previous InputManager
+
+good exmple on NTSC vs. PAL?
+e:\Steven\XNA\SGDK\TutorialSGDK\10-xgmplayer\dev\src\main.c
